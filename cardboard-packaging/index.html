@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPER PACKAGING HUB - Premium Cardboard Packaging Boxes</title>
+    <meta name="description"
+        content="Leading manufacturer of high-quality cardboard packaging solutions. Custom boxes, shipping containers, and sustainable packaging for businesses worldwide.">
+    <meta name="keywords"
+        content="cardboard boxes, packaging solutions, shipping boxes, custom packaging, eco-friendly packaging">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/svg+xml" href="public/icon.svg">
+    <link rel="manifest" href="public/site.webmanifest">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <img src="public/logo1.jpeg" alt="Logo" class="logo-img">
+                    <span class="brand-name-text">PAPER PACKAGING HUB</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <button class="btn btn-primary" onclick="openContactModal()">Get a Quote</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Fixed Contact Button -->
+    <button class="fixed-contact-btn" onclick="openContactModal()">
+        <i class="bi bi-envelope-fill mb-2"></i>
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+    </button>
+
+    <!-- Hero Slider -->
+    <div id="heroCarousel" class="carousel slide hero-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-slide" style="background-image: url('./public/slider/product1.jfif');">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text-white">
+                                <h1 class="display-3 fw-bold mb-4">Corrugated Boxes</h1>
+                                <p class="lead mb-4">Durable corrugated boxes designed for safe transportation of goods.
+                                    High-quality materials and expert craftsmanship for reliable packaging solutions.
+                                </p>
+                                <div class="d-flex gap-3">
+                                    <button class="btn btn-light btn-lg" onclick="openContactModal()">Request a
+                                        Quote</button>
+                                    <a href="products.html" class="btn btn-outline-light btn-lg">View Products</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-slide" style="background-image: url('./public/slider/product2.jfif');">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text-white">
+                                <h1 class="display-3 fw-bold mb-4">3 Ply Corrugated Boxes</h1>
+                                <p class="lead mb-4">Standard strength corrugated boxes with 3-ply construction for
+                                    everyday shipping needs. Perfect balance of durability and cost-effectiveness.</p>
+                                <div class="d-flex gap-3">
+                                    <button class="btn btn-light btn-lg" onclick="openContactModal()">Get
+                                        Started</button>
+                                    <a href="products.html" class="btn btn-outline-light btn-lg">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-slide" style="background-image: url('./public/slider/glass.jfif');">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 text-white">
+                                <h1 class="display-3 fw-bold mb-4">Printed Corrugated Boxes</h1>
+                                <p class="lead mb-4">Custom printed corrugated boxes with your branding, logos, and
+                                    designs. Make your packaging stand out with professional printing solutions.</p>
+                                <div class="d-flex gap-3">
+                                    <button class="btn btn-light btn-lg" onclick="openContactModal()">Contact
+                                        Us</button>
+                                    <a href="products.html" class="btn btn-outline-light btn-lg">Browse Catalog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Products Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">Our Product Range</h2>
+                <p class="lead text-muted">Comprehensive packaging solutions for every industry</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-box2 display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Corrugated boxes</h3>
+                            <p class="text-muted">Durable corrugated boxes designed for safe transportation of goods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-gift display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">3 ply Corrugated boxes</h3>
+                            <p class="text-muted">Standard strength corrugated boxes with 3-ply construction for
+                                everyday shipping needs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-truck display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">5 ply Corrugated boxes</h3>
+                            <p class="text-muted">Enhanced durability with 5-ply construction for heavier and more
+                                valuable items</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-shield-check display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">7 ply Corrugated boxes</h3>
+                            <p class="text-muted">Heavy-duty protection with 7-ply construction for industrial and
+                                fragile goods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-archive display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">9 ply Corrugated boxes</h3>
+                            <p class="text-muted">Maximum strength 9-ply boxes for the most demanding shipping and
+                                storage requirements</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-printer display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Printed Corrugated boxes</h3>
+                            <p class="text-muted">Custom printed corrugated boxes with your branding, logos, and designs
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="product-icon mb-3">
+                                <i class="bi bi-palette display-4 text-primary"></i>
+                            </div>
+                            <h3 class="h4 mb-3">Customized boxes</h3>
+                            <p class="text-muted">Fully customizable boxes tailored to your specific size, shape, and
+                                design requirements</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-primary btn-lg">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="badge bg-primary text-white mb-3 px-3 py-2">Manufacturing Excellence</div>
+                    <h2 class="display-5 fw-bold mb-4">State-of-the-Art Production Facilities</h2>
+                    <p class="lead text-muted mb-4">Our advanced manufacturing capabilities ensure precision,
+                        consistency, and quality in every box we produce.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Automated die-cutting
+                            systems</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Digital printing
+                            technology</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Quality control at
+                            every stage</li>
+                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Custom structural
+                            design</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="bg-primary text-white p-4 rounded-3 shadow-lg">
+                            <div class="row text-center">
+                                <div class="col-6 mb-3">
+                                    <h3 class="display-4 fw-bold">Since </h3>
+                                    <p class="mb-0">2013</p>
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <h3 class="display-4 fw-bold">50K+</h3>
+                                    <p class="mb-0">Products Delivered</p>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="display-4 fw-bold">99%</h3>
+                                    <p class="mb-0">Customer Satisfaction</p>
+                                </div>
+                                <div class="col-6">
+                                    <h3 class="display-4 fw-bold">24/7</h3>
+                                    <p class="mb-0">Customer Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="display-3 fw-bold mb-2">500+</h3>
+                        <p class="mb-0">Happy Clients</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="display-3 fw-bold mb-2">2M+</h3>
+                        <p class="mb-0">Boxes Produced</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="display-3 fw-bold mb-2">100%</h3>
+                        <p class="mb-0">Recyclable</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="stat-item">
+                        <h3 class="display-3 fw-bold mb-2">Serving</h3>
+                        <p class="mb-0">Worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">The industry we Served</h2>
+                <p class="lead">At Paper Packaging Hub.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/texttile.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Textile Industry</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/food-industry.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Food Industry</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/pharma.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Pharmaceuticals</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/enginnering.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Engineering Goods</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/home-appliance.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Home Appliance</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/air-cargo.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Air Cargo & Logistics</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/ecommerce.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">E-Commerce Industry</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/manufacaring-industry.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Manufacturing Industry</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border-0 shadow-sm hover-lift animate-fade-in-up">
+                        <div class="industry-card text-center p-2 h-100 shadow-sm border-0 card-body">
+                            <div class="icon-box mb-3">
+                                <img src="./public/serve/industry-focus.jpeg">
+                            </div>
+                            <h5 class="fw-semibold">Industry Focused products</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sustainability Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary mb-3">Committed to Sustainability</h2>
+                <p class="lead text-muted">Protecting the planet while delivering quality packaging</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-recycle display-5 text-success"></i>
+                        </div>
+                        <h4 class="h5 mb-3">100% Recyclable</h4>
+                        <p class="text-muted small">All materials are fully recyclable and biodegradable</p>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3" style="width: 80px; height: 80px;">
+                            <i class="bi bi-tree display-5 text-success"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Sustainable Sourcing</h4>
+                        <p class="text-muted small">Materials sourced from responsibly managed forests</p>
+                    </div>
+                </div> -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-lightning-charge display-5 text-success"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Energy Efficient</h4>
+                        <p class="text-muted small">Powered by renewable energy sources</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="text-center p-4">
+                        <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center mb-3"
+                            style="width: 80px; height: 80px;">
+                            <i class="bi bi-droplet display-5 text-success"></i>
+                        </div>
+                        <h4 class="h5 mb-3">Water Conservation</h4>
+                        <p class="text-muted small">Minimal water usage in production processes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Get Started?</h2>
+            <p class="lead mb-4 card-body">Contact us today for a free quote and discover how we can meet your packaging
+                needs</p>
+            <button class="btn btn-light btn-lg" onclick="openContactModal()">Request a Quote</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="logo-container mb-3">
+                        <img src="public/logo.jpeg" alt="PAPER PACKAGING HUB" style="width: 50px; height: 50px;">
+                        <span class="brand-name-text text-white">PAPER PACKAGING HUB</span>
+                    </div>
+                    <p class="text-white-50">Leading manufacturer of premium cardboard packaging solutions. Quality,
+                        sustainability, and innovation in every box.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h6 class="fw-bold mb-3 text-white">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Products</a>
+                        </li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="#" onclick="openContactModal(); return false;"
+                                class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3 text-white">Products</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Shipping
+                                Boxes</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Retail
+                                Packaging</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Custom
+                                Design</a></li>
+                        <li class="mb-2"><a href="products.html" class="text-white-50 text-decoration-none">Food
+                                Packaging</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h6 class="fw-bold mb-3 text-white">Contact Info</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-2 text-white-50"><i class="bi bi-telephone me-2"></i><a href="tel:+919773559663"
+                                aria-label="Call +91 9773559663" class="text-white-50 text-decoration-none">+91
+                                9773559663</a></li>
+                        <li class="mb-2 text-white-50"><i class="bi bi-envelope me-2"></i>support@paperpackaginghub.com
+                        </li>
+                        <li class="mb-2 text-white-50"><i class="bi bi-geo-alt me-2"></i>17-B,Near Mary Matha
+                            Church, Jose Nagar, Khairani Road, Sakinaka, Andheri-East, Mumbai-400072</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4 border-secondary">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0 text-white-50">&copy; 2026 PAPER PACKAGING HUB. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.facebook.com/share/18dcYYhodR/" class="text-white-50 me-3"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/paper-packaging-hub-5432353a6?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        class="text-white-50 me-3"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/paperpackaginghub?igsh=MXVyanF5bDlyemZmZA=="
+                        class="text-white-50 me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="https://youtube.com/@paperpackaginghub?si=G8MEprLLBunsnMKD" class="text-white-50 me-3">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Form Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold">Get in Touch</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <!-- Alert Messages -->
+                    <div id="modalSuccessAlert" class="alert alert-success alert-dismissible fade show" role="alert"
+                        style="display: none;">
+                        <i class="bi bi-check-circle me-2"></i>
+                        <span id="modalSuccessMessage">Thank you! Your message has been sent successfully.</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    <div id="modalErrorAlert" class="alert alert-danger alert-dismissible fade show" role="alert"
+                        style="display: none;">
+                        <i class="bi bi-exclamation-circle me-2"></i>
+                        <span id="modalErrorMessage">An error occurred. Please try again.</span>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h6 class="fw-bold mb-3">Contact Information</h6>
+                            <div class="mb-3">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <span>+91 9773559663</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-envelope text-primary me-2"></i>
+                                <span>support@paperpackaginghub.com</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <span>17-B,Near Mary Matha Church,Jose Nagar,Khairani Road,Sakinaka,Andheri-East,
+                                    Mumbai-400072</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-clock text-primary me-2"></i>
+                                <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <form id="contactForm" method="POST" action="contact.php"
+                                onsubmit="handleContactSubmit(event)">
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Full Name *</label>
+                                    <input type="text" class="form-control" id="modalFullName" name="fullName" required>
+                                    <small class="text-danger" id="modalFullNameError"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Email *</label>
+                                    <input type="email" class="form-control" id="modalEmail" name="email" required>
+                                    <small class="text-danger" id="modalEmailError"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Phone *</label>
+                                    <input type="tel" class="form-control" id="modalPhone" name="phone" required>
+                                    <small class="text-danger" id="modalPhoneError"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Subject *</label>
+                                    <select class="form-select transparent-select" id="modalSubject" name="subject"
+                                        required>
+                                        <option value="">Select a subject</option>
+                                        <option value="Get a Quote">Get a Quote</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Product Information">Product Information</option>
+                                    </select>
+                                    <small class="text-danger" id="modalSubjectError"></small>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Message *</label>
+                                    <textarea class="form-control" id="modalMessage" name="message" rows="3"
+                                        required></textarea>
+                                    <small class="text-muted">Min 10 characters</small>
+                                    <small class="text-danger d-block" id="modalMessageError"></small>
+                                </div>
+                                <!-- <div class="mb-3 form-check">
+                                    <input type="checkbox" class="form-check-input" id="modalPrivacy" name="privacy"
+                                        required>
+                                    <label class="form-check-label" for="modalPrivacy">
+                                        I agree to privacy policy *
+                                    </label>
+                                    <small class="text-danger d-block" id="modalPrivacyError"></small>
+                                </div> -->
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call Floating Button (opens dialer) -->
+    <a href="tel:+919773559663" class="call-float" aria-label="Call +91 9773559663">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+            <path
+                d="M493.4 24.6l-104-24c-11.2-2.6-22.9 2.2-29.2 11.8l-48 80c-6.1 10.2-4.1 23 5.1 30.4l56 40c-34.7 73.6-92.1 131-165.7 165.7l-40-56c-7.4-9.2-20.2-11.2-30.4-5.1l-80 48c-9.6 6.3-14.4 18-11.8 29.2l24 104c2.6 11.4 12.4 19.6 24 19.6 256.5 0 464-207.5 464-464 0-11.6-8.2-21.4-19.6-24z" />
+        </svg>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919892408147" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
+            <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 339.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56 81.2 56 130.5 0 101.8-84.1 184.6-185.5 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+        </svg>
+    </a>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
